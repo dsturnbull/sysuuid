@@ -1,0 +1,15 @@
+SYNOPSIS
+     $ gem install sysuuid
+     irb> require 'sysuuid'
+     irb> sysuuid  #=> "4b7067bd-928b-4656-9960-8a58edc6ff02"
+     irb> sysuuid  #=> "3cb722b9-7776-4198-bdd2-dcd228716658"
+
+DESCRIPTION
+     Uses uuid_generate from e2fsprogs, which comes standard
+     with OS X and Linux.
+
+     It's over 2000 times faster than shelling out to uuidgen.
+
+AVAILABILITY
+     http://github.com/dsturnbull/sysuuid
+

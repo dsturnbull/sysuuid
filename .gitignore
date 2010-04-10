@@ -1,0 +1,6 @@
+*.swp
+*.o
+*.bundle
+ext/Makefile
+bin
+vendor
