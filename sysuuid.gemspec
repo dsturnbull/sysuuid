@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sysuuid}
-  s.version = "0.0.1"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Turnbull"]
-  s.date = %q{2010-04-11}
+  s.date = %q{2010-04-13}
   s.description = %q{      sysuuid # => BBC4937C-344F-47C5-AA36-E19CC070DBCC
 }
   s.email = %q{dsturnbull@me.com}
