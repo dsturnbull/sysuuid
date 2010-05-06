@@ -32,15 +32,3 @@ sysuuid_uuid(VALUE self)
 	return rb_str_new2(uuid_str);
 }
 
-// magic_fail - raise exceptions
-void
-err(const char *error)
-{
-	const char  *format = "magic_%s() error";
-	char		*error_message;
-
-	error_message = malloc(sizeof(char *) * (strlen(format) + strlen(error)));
-	sprintf((char *)error_message, format, error);
-	rb_raise(rb_const_get(rb_cObject, rb_intern("RuntimeError")), error_message);
-}
-
