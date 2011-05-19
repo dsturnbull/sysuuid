@@ -27,7 +27,7 @@ sysuuid_uuid(VALUE self)
 	uuid_t uuid;
 
 	uuid_generate(uuid);
-	uuid_unparse_lower(uuid, uuid_str);
+	uuid_unparse(uuid, uuid_str);
 
 	return rb_str_new2(uuid_str);
 }

@@ -1,8 +1,6 @@
-require 'vendor/gems/environment'
-
 require 'rake'
-require 'spec'
-require 'spec/rake/spectask'
+require 'rspec'
+require 'rspec/core/rake_task'
 
 task :default => [:clean, :make, :spec]
 
@@ -13,9 +11,9 @@ task :make do
   end
 end
 
-Spec::Rake::SpecTask.new(:spec) do |t|
-  t.spec_opts = %w(-fs -c)
-  t.spec_files = FileList['spec/*_spec.rb']
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.rspec_opts = %w(-fs -c)
+  t.pattern = FileList['spec/*_spec.rb']
 end
 
 task :clean do
