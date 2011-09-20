@@ -8,6 +8,6 @@ if ['Linux', 'SunOS'].include?(`uname`.strip)
   have_library('uuid')
 end
 
-$CFLAGS += ' -Werror -Wall'
+$CFLAGS += ' -Werror -Wall -Wno-unused-parameter'
 
 create_makefile(extension_name)

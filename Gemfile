@@ -1,4 +1,4 @@
-# bundler08
+source :rubygems
 
 gem 'rake'
 gem 'rspec'
